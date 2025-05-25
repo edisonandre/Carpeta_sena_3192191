@@ -52,9 +52,7 @@ print(f"TOTAL A PAGAR: ${total_general}")
 
 #actividad 3
 print()
-# Solicitar el nombre del estudiante
 nombre_estudiante = input("Ingrese el nombre del estudiante: ")
-
 # Asignatura 1
 materia1 = input("Ingrese el nombre de la primera asignatura: ")
 nota1_1 = float(input(f"Ingrese la primera nota de {materia1}: "))
