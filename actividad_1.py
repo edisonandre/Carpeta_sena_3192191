@@ -23,19 +23,19 @@ tupla6 = (num6, num6**2)
 tupla7 = (num7, num7**2)
 tupla8 = (num8, num8**2)
 tupla9 = (num9, num9**2)
-tupla10 = (num10, num10**2
+tupla10 = (num10, num10**2)
 # Lista de tuplas
 lista_2 = [tupla1, tupla2, tupla3, tupla4, tupla5, tupla6, tupla7, tupla8, tupla9, tupla10]
 # Imprimir la lista de tuplas
 print("Lista de tuplas (número, cuadrado):")
-print(lista_2
+print(lista_2)
 # Sumamos solo los primeros valores (los números originales)
 suma = sum(lista_1)
 promedio = suma // 10
-doble = suma * 
+doble = suma * 2
 print("Suma:", suma)
 print("Promedio:", promedio)
-print("Doble de la suma:", doble
+print("Doble de la suma:", doble)
 print("---------- acceder a los elementos de un diccionario ----------")
 
 dictionary = {"a": 1, 
