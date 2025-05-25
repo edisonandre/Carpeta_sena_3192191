@@ -51,4 +51,65 @@ print("----------------------------")
 print(f"TOTAL A PAGAR: ${total_general}")
 
 #actividad 3
+print()
+# Solicitar el nombre del estudiante
+nombre_estudiante = input("Ingrese el nombre del estudiante: ")
+
+# Asignatura 1
+materia1 = input("Ingrese el nombre de la primera asignatura: ")
+nota1_1 = float(input(f"Ingrese la primera nota de {materia1}: "))
+nota1_2 = float(input(f"Ingrese la segunda nota de {materia1}: "))
+prom1 = (nota1_1 + nota1_2) / 2
+datos1 = [(materia1, prom1), nota1_1, nota1_2]
+
+# Asignatura 2
+materia2 = input("Ingrese el nombre de la segunda asignatura: ")
+nota2_1 = float(input(f"Ingrese la primera nota de {materia2}: "))
+nota2_2 = float(input(f"Ingrese la segunda nota de {materia2}: "))
+prom2 = (nota2_1 + nota2_2) / 2
+datos2 = [(materia2, prom2), nota2_1, nota2_2]
+
+# Asignatura 3
+materia3 = input("Ingrese el nombre de la tercera asignatura: ")
+nota3_1 = float(input(f"Ingrese la primera nota de {materia3}: "))
+nota3_2 = float(input(f"Ingrese la segunda nota de {materia3}: "))
+prom3 = (nota3_1 + nota3_2) / 2
+datos3 = [(materia3, prom3), nota3_1, nota3_2]
+
+materias = [datos1, datos2, datos3]
+
+boletin = {
+    "nombre": nombre_estudiante,
+    "materias": materias
+}
+
+promedio_final = (prom1 + prom2 + prom3) / 3
+
+print("======= BOLETÍN DE CALIFICACIONES =======")
+print(f"Estudiante: {boletin['nombre']}")
+print("-----------------------------------------")
+
+m1 = boletin["materias"][0]
+print(f"Asignatura: {m1[0][0]}")
+print(f"  Nota 1: {m1[1]}")
+print(f"  Nota 2: {m1[2]}")
+print(f"  Promedio: {m1[0][1]}")
+print("-----------------------------------------")
+
+m2 = boletin["materias"][1]
+print(f"Asignatura: {m2[0][0]}")
+print(f"  Nota 1: {m2[1]}")
+print(f"  Nota 2: {m2[2]}")
+print(f"  Promedio: {m2[0][1]}")
+print("-----------------------------------------")
+
+m3 = boletin["materias"][2]
+print(f"Asignatura: {m3[0][0]}")
+print(f"  Nota 1: {m3[1]}")
+print(f"  Nota 2: {m3[2]}")
+print(f"  Promedio: {m3[0][1]}")
+print("-----------------------------------------")
+
+print(f"Promedio Final del Estudiante: {promedio_final:.2f}")
+print("=========================================")
 
