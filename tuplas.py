@@ -10,4 +10,4 @@ x = tuple(y)
 x = x+2
 print(x)
 
-print("taller tupals")
+print("esto es igual a 2")
