@@ -47,9 +47,11 @@ base = float("ingrese la base del rectangulo ")
 altura = float("ingrese la altura del rectangulo ")
 area = base * altura
 print("la area del rectangulo fue de: ", area)
+
 #9 año de nacimiento
 año = int(input("ingrese su año de nacimiento "))
 print("su edad a base de su año de naciento es: ",(2025 - año))
+
 #10 direcion
 print("crear una direccion")
 nombre_usuario = input("ingrese su nombre de usuario ")
@@ -94,14 +96,17 @@ print("la respuesta de las operacion son: ",num1 / num2)
 print("muestra el doble de un numero")
 exp = int(input("ingrese un numero "))
 print("el doble de ",exp ** 2) #se multiplica 2 veces a la ve
+
 #18 divide la midad 2 de un numero
 print("muestra la mitad de un numero")
 mit = int(input("ingrese un numero "))
 print("el doble de ",mit // 2) #se multiplica 2 veces a la ve
+
 #19 contador de letras en frase
 print("contador de letras de un nombre")
 longitud = len(input("ingrese una frase")) #len se utiliza para contar los caracteres
 print("tiene", longitud, "caracteres")
+
 #20 concatenacion
 print("palabra se va a repetir 3 veces")
 texto1 = input("ingrese una palabra ")
@@ -127,6 +132,7 @@ print(letr[0:11])
 #24 
 num = int(input("ingrese un numero que quiera elevarlo al cuadrado"))
 print("el resultado del evelado al cuadrado es: ",num ** 3)
+
 #25
 num1 = int(input("Ingrese el primer número: "))
 num2 = int(input("Ingrese el segundo número: "))

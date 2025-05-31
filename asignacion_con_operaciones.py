@@ -7,6 +7,8 @@ print (n) #30
 
 print("_________________________________\n")
 
+"""comparacion de caracteres"""
+
 n = "hola "
 n += "mundo "
 print (n) 

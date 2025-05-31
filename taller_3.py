@@ -22,6 +22,7 @@ promedio = (4.6, 2.7, 3.7)
 result = sum(promedio) // len(promedio)
 print(result)
 print("--------ejercicio 6------------\n")
+
 #Crear una lista con 4 números enteros y almacenarlos en variables individuales
 numeros = [10, 20, 30, 40]
 a, b, c, d = numeros
@@ -30,10 +31,12 @@ print("b:", b)
 print("c:", c)
 print("d:", d)
 print("--------ejercicio 7------------\n")
+
 #Crear una tupla con 2 elementos y realizar una multiplicación de los elementos.
 multiplicacion = (5 , "hola mundo")
 print(multiplicacion * 2)
 print("---------ejercicio 8------------\n")
+
 #Crear una lista con 3 elementos, agregar un nuevo número y extraer el primer y último elemento.
 crear_elemento = ["pepe", False, 245]
 print(crear_elemento)
@@ -49,31 +52,37 @@ print("---------ejercicio 10-----------\n")
 numeros_enteros = [34, 65, 12, 12, 34]
 print(numeros_enteros[0] == numeros_enteros[-1])
 print("---------ejercicio 11-----------\n")
+
 #Crear una tupla con 5 números y almacenar la multiplicación del primer y último elemento.
 tuplas_multiplicacion = (12, 5, 7, 1,9)
 print(tuplas_multiplicacion)
 print("la multipliacion entre las tuplas son", tuplas_multiplicacion[0] * tuplas_multiplicacion[-1])
 print("---------ejercicio 12-----------\n")
+
 #Crear una lista con 3 números y realizar la división entre el primer y el tercer número.
 division = [34, 24, 64]
 print(division)
 print("la division entre las listas son: ", division[0] / division[2])
 print("---------ejercicio 13-----------\n")
+
 #Crear una tupla con 4 números enteros y extraer el tercer elemento.
 mi_tupla = (10, 20, 30, 40)
 tercer_elemento = mi_tupla[2]
 print("El tercer elemento es:", tercer_elemento)
 print("---------ejercicio 14-----------\n")
+
 #Crear una lista con 5 números flotantes y realizar la suma de todos los elementos.
 decimal = [13.5, 46.5, 2.5, 7.3333, 13.44]
 result = sum(decimal)
 print("La suma de cada float es: ", result)
 print("---------ejercicio 15-----------\n")
+
 #Crear una lista con 4 elementos enteros. Luego, convertir la lista en una tupla y mostrarla.
 elemento1 = [4,2,7,8]
 elemento2 = tuple(elemento1)
 print(elemento2)
 print("---------ejercicio 16-----------\n")
+
 #Crear una tupla con 3 elementos y convertirla en una lista. Luego, agrega un nuevo número a la lista.
 tuplas = ("apple", "banana", "cherry")
 y = list(tuplas)
@@ -81,6 +90,7 @@ y.append("orange")
 tuplas = tuple(y)
 print(tuplas)
 print("---------ejercicio 17-----------\n")
+
 #Crear una lista con 5 elementos y convertirla en una tupla. Luego, muestra el tercer elemento de la tupla.
 listas = [True, "edisomn", "fabi", False, 13]
 y = tuple(listas)
@@ -99,6 +109,7 @@ print(contador)
 y = tuple(contador)
 print("hay", len(y))
 print("---------ejercicio 20-----------\n")
+
 #Crear una tupla con 5 elementos y convertirla en una lista. Luego, elimina el último elemento de la lista
 mi_tupla = (1, 2, 3, 4, 5)
 mi_lista = list(mi_tupla)
