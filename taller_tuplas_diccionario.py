@@ -1,4 +1,5 @@
-# Solicitar datos al usuario
+#Taller: Registro simple de producto y cálculo de costos
+
 nombre = input("Ingrese el nombre del producto: ")
 precio_unitario = float(input("Ingrese el precio unitario: "))
 cantidad = int(input("Ingrese la cantidad comprada: "))
@@ -16,7 +17,8 @@ print("Precio unitario:", producto_info[1])
 print("Cantidad comprada:", cantidad)
 print("Costo total: $", costo_total)
 
-#ejercicio 2
+#Taller #2: Factura de múltiples productos (versión fija sin bucles)
+
 nombre1 = input("Ingrese el nombre del primer producto: ")
 precio1 = float(input("Ingrese el precio unitario del primer producto: "))
 cantidad1 = int(input("Ingrese la cantidad comprada del primer producto: "))
@@ -50,9 +52,10 @@ print(f"3. {nombre3} - ${precio3} x {cantidad3} = ${total3}")
 print("----------------------------")
 print(f"TOTAL A PAGAR: ${total_general}")
 
-#actividad 3
+#Taller #3: Registro de notas de un estudiante
 print()
-nombre_estudiante = input("Ingrese el nombre del estudiante: ")
+nombre_estudiante = input("Ingrese el nombre del estudiante: ")  #nombre del estudiante
+
 # Asignatura 1
 materia1 = input("Ingrese el nombre de la primera asignatura: ")
 nota1_1 = float(input(f"Ingrese la primera nota de {materia1}: "))
@@ -72,10 +75,11 @@ materia3 = input("Ingrese el nombre de la tercera asignatura: ")
 nota3_1 = float(input(f"Ingrese la primera nota de {materia3}: "))
 nota3_2 = float(input(f"Ingrese la segunda nota de {materia3}: "))
 prom3 = (nota3_1 + nota3_2) / 2
-datos3 = [(materia3, prom3), nota3_1, nota3_2]
+datos3 = [(materia3, prom3), nota3_1, nota3_2] #lista 
 
 materias = [datos1, datos2, datos3]
 
+#espacio de almacenamiento de diccionario y guarda informacion
 boletin = {
     "nombre": nombre_estudiante,
     "materias": materias
@@ -87,6 +91,7 @@ print("======= BOLETÍN DE CALIFICACIONES =======")
 print(f"Estudiante: {boletin['nombre']}")
 print("-----------------------------------------")
 
+#boletin 1 y coordenadas
 m1 = boletin["materias"][0]
 print(f"Asignatura: {m1[0][0]}")
 print(f"  Nota 1: {m1[1]}")
@@ -108,6 +113,6 @@ print(f"  Nota 2: {m3[2]}")
 print(f"  Promedio: {m3[0][1]}")
 print("-----------------------------------------")
 
-print(f"Promedio Final del Estudiante: {promedio_final:.2f}")
+print(f"Promedio Final del Estudiante: {promedio_final}")
 print("=========================================")
 
