@@ -38,3 +38,17 @@ num1, num2 = int(input("ingrese un numero ")), int(input("ingrese un numero "))
 print("el resultado debe ser 4 :D")
 resul = num1 * num2
 print("el resultado final es 4" if resul == 4 else "el resultado es diferente")
+
+gen = int(input("ingrese el año de nacimiento para saber la generacion "))
+if gen > 1920 and gen < 1940:
+    print("Generacion Silenciosa")
+elif gen > 1941 and gen < 1964:
+    print("Boby Boomer")
+elif gen > 1965 and gen < 1979:
+    print("Generacion x")
+elif gen > 1980 and gen < 2000:
+    print("Generacion Y")
+elif gen > 2001 and gen < 2010:
+    print("generacion Z")
+else:
+    print("es muy joven o ya no existe")
