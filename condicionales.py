@@ -1,20 +1,3 @@
-"""los operadores relacionales en python son
-
-operador     nombre               ejemplo            significado
-   <       menor que               5<4         5 es menor que 4
-   >       mayor que               7>4         7 es mayor que 4
-   ==      igual a                 4==4        4 es igual a 4
-   !=      no igual a (diferente)  4!=5        4 no es igual a 5
-   <=      menor o igual           6<=6        6 es menor o igual a 6
-   >=      mayor o igual           9>=5        9 es mayor o igual a 5
-
-operadores logicos
-
-operador logico               simbolo
-conjucion                       and
-"""
-
-
 edad = 30
 if edad >= 18:
     print("es adulto")
@@ -67,5 +50,9 @@ elif gen > 1980 and gen < 2000:
     print("Generacion Y")
 elif gen > 2001 and gen < 2010:
     print("generacion Z")
+elif gen > 2011 and gen < 2024:
+    print("Generacion alfa")
+elif gen > 2025:
+    print("Generacion Beta")
 else:
     print("es muy joven o ya no existe")
