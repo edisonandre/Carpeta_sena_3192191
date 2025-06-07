@@ -15,7 +15,7 @@ n3 = int(input("ingrese el segundo numero "))
 
 if n2 > n3:
     print("es mayor ", n2)
-elif n2 < n3:
+elif n3 > n2:
     print("es menor ", n3)
 else:
     print("ERROR")
