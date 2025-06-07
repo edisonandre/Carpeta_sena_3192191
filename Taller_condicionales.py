@@ -40,7 +40,7 @@ if 10 <= n5 <= 20:
 else:
     print("El número NO está entre 10 y 20.")
     
-# Dados tres números, encuentra el mayor usando condicionales.
+# 5 Dados tres números, encuentra el mayor usando condicionales.
 # Pedimos al usuario que ingrese tres números
 num1 = int(input("Ingresa el primer número: "))
 num2 = int(input("Ingresa el segundo número: "))
@@ -61,7 +61,7 @@ print("Se quiere saber que la suma del precio del producto es mayor de $100 para
 precio = int(input("ingrese el valor del producto "))
 if precio >= 100:
     resul = (precio * 10) / 100  #calculo para sacar el porcentaje
-    print("el precio final si se puede hacer el cuento del 10% ", resul)
+    print("el precio final si se puede hacer el descuento del 10% ", resul)
 else:
     print("no se puede hacer el descuento es menor de $100")
 
@@ -79,9 +79,9 @@ tipo_cliente = input("Que tipo de cliente eres VIP o normal ").upper   # el tipo
 
 if tipo_cliente == "VIP":
     result = (precio1 * 20) / 100  #calculo para hacar el porcentaje
-    print("Eres 'VIP' tienes descuente del 20% ", result, "tienes que pagar")
+    print(f"Eres 'VIP' tienes descuente del 20% {result} tienes que pagar")
 else:
-    print("tienes que pagar el precio normal cliente ", precio, "tienes que pagar")
+    print("tienes que pagar el precio normal cliente ", precio1, "tienes que pagar")
 
 #9. Determina si un número es múltiplo de 5 y de 3 al mismo tiempo.
 # Pedimos al usuario que ingrese un número
@@ -115,7 +115,8 @@ else:
     print("Menor o igual a 10")
     
 #12 Verifica si el número 7 está en la lista [3, 5, 7, 9]. Si está, muestra “Está en la lista”, si no, muestra “No está en la lista”.
-listt2 = [3, 5, 7, 9]
+num, nu2, nu3, nu4 = int(input("ingrese los numeros"))
+listt2 = [num, nu2, nu3, nu4]
 if 7 in listt2:  # el in sirve para hacer si 7 esta dentro en la lista
     print("Está en la lista")
 else:
