@@ -116,7 +116,7 @@ else:
     
 #12 Verifica si el número 7 está en la lista [3, 5, 7, 9]. Si está, muestra “Está en la lista”, si no, muestra “No está en la lista”.
 listt2 = [3, 5, 7, 9]
-if 7 in listt2:
+if 7 in listt2:  # el in sirve para hacer si 7 esta dentro en la lista
     print("Está en la lista")
 else:
     print("No está en la lista")
@@ -209,3 +209,15 @@ else:
     print(dicionary)
     
 #24. Dado el diccionario {"producto": "pan", "precio": 1200}, verifica si la clave “precio” existe. Si existe, muestra su valor, si no, muestra “No hay precio”.
+dicionary1 = {"producto": "pan", "precio": 1200}
+if "precio" in dicionary1:
+    print(dicionary1["precio"])
+else:
+    print("No hay precio")
+    
+#25.Crea un diccionario con {"pan": 1200, "leche": 2000}. Si “pan” está en el diccionario, muestra su precio; si no, muestra “Producto no disponible
+diccio = {"pan": 1200, "leche": 2000}
+if "pan" in diccio:
+    print(diccio["pan"])
+else:
+    print("Producto no disponible")
