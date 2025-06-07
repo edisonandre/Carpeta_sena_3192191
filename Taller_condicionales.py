@@ -153,3 +153,59 @@ else:
     print("Orden descendente")
     
 #17.Dada la tupla (25, 32, 28), verifica si el segundo valor es mayor a 30. Si lo es, muestra “Edad mayor a 30”, si no, “Edad menor o igual a 30”.
+tuplas = (25, 32, 28)
+if tuplas[1] > 30:
+    print("Edad mayor a 30")
+else:
+    print("Edad menor o igual a 30")
+
+#18. Convierte la tupla (1, 2, 3) a lista, cambia el segundo valor a 10 solo si es igual a 2, luego vuelve a convertirla en tupla y muéstrala.
+x = (1, 2 , 3)
+
+if x[1] == 2:
+    y = list(x)
+    y[1] = 10
+    print(y)
+else:
+    print("No es igual a 2")
+    
+#19. Dada la tupla (4, 9), accede al segundo valor. Si es mayor que 5, muestra “Coordenada alta”, si no, “Coordenada baja”.
+tuplas1 = (4, 9)
+if tuplas1 [1] > 5:
+    print("Coordenadas alta")
+else:
+    print("Coordenadas baja")
+
+#20. Compara si las tuplas (3, 4) y (3, 5) son iguales. Si lo son, muestra “Tuplas iguales”, si no, “Tuplas diferentes”.
+tuplas3, tuplas4 = (3, 4), (3,5)
+if tuplas3 == tuplas4:
+    print("Tuplas iguales")
+else:
+    print("Tuplas diferentes")
+
+
+""" Ejercicios con Diccionarios (con condicionales) """
+#21. Crea un diccionario con {"nombre": "Juan", "edad": 17}. Si la edad es mayor o igual a 18, muestra “Adulto”, si no, muestra “Menor de edad”.
+persona = {"nombre": "Juan", "edad": 17}
+if persona["edad"] >= 18:
+    print("Adulto")
+else:
+    print("Menor de edad")
+
+#22. Crea un diccionario {"nombre": "Lucía", "edad": 20}. Si la edad es mayor a 18, cambia el valor de “edad” a 21. Luego muestra el diccionario.
+dicionari = {"nombre": "Lucía", "edad": 20}
+if dicionari["edad"] >= 18:
+    x = dicionari["edad"] = 21
+    print(dicionari)
+else:
+    print("Es menor")
+
+#23.Crea un diccionario con {"nombre": "Carlos"}. Si la clave “ciudad” no existe, agrégala con el valor “Bogotá” y muestra el diccionario.
+dicionary = {"nombre": "Carlos"}
+if dicionary == ["ciudad"]:
+    print(dicionary)
+else:
+    dicionary.update({"color": "red"})
+    print(dicionary)
+    
+#24. Dado el diccionario {"producto": "pan", "precio": 1200}, verifica si la clave “precio” existe. Si existe, muestra su valor, si no, muestra “No hay precio”.
