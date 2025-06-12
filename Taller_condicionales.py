@@ -49,12 +49,13 @@ num3 = int(input("Ingresa el tercer número: "))
 # Usamos condicionales para encontrar el mayor
 if num1 >= num2 and num1 >= num3:
     mayor = num1
+    print("el numero mayor es ", mayor)
 elif num2 >= num1 and num2 >= num3:
     mayor = num2
+    print("el numero mayor es ", mayor)
 else:
     mayor = num3
-
-print("El número mayor es:", mayor)
+    print("El número mayor es:", mayor)
 
 #6 Calcula el precio final con un 10% de descuento si el total es mayor a $100.
 print("Se quiere saber que la suma del precio del producto es mayor de $100 para hacer el descuento")
@@ -115,7 +116,7 @@ else:
     print("Menor o igual a 10")
     
 #12 Verifica si el número 7 está en la lista [3, 5, 7, 9]. Si está, muestra “Está en la lista”, si no, muestra “No está en la lista”.
-num, nu2, nu3, nu4 = int(input("ingrese los numeros"))
+num, nu2, nu3, nu4 = int(input("ingrese los numeros")), int(input("ingrese el numero")), int(input("ingrese el numero")), int(input("ingrese el numero"))
 listt2 = [num, nu2, nu3, nu4]
 if 7 in listt2:  # el in sirve para hacer si 7 esta dentro en la lista
     print("Está en la lista")
@@ -161,7 +162,7 @@ else:
     print("Edad menor o igual a 30")
 
 #18. Convierte la tupla (1, 2, 3) a lista, cambia el segundo valor a 10 solo si es igual a 2, luego vuelve a convertirla en tupla y muéstrala.
-x = (1, 2 , 3)
+x = (1, 2, 3)
 
 if x[1] == 2:
     y = list(x)
