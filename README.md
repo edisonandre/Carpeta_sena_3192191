@@ -1,11 +1,11 @@
 # Carpeta_sena_3192191
 # 👋 ¡Hola! Soy Edison Martínez, estudiante del SENA en el programa de Técnico en Programación de Software.
 
-## 🛠️ Pila de tecnología:
+# 🛠️ Pila de tecnología:
 - 🐍 Python
 - 🐙 GitHub
 
-## 📊 Estadísticas de GitHub:
+# 📊 Estadísticas de GitHub:
 ![José's GitHub Stats](https://github-readme-stats.vercel.app/api?username=Edisonandre&show_icons=true&theme=radical)
 
 ![Racha de Contribuciones](https://github-readme-streak-stats.herokuapp.com/?user=Josan31&theme=dark)
