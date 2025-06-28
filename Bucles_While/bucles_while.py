@@ -9,7 +9,7 @@ while contador > 0:
     print(f"contador:, {contador}")
     contador -= 1
     break
-    print("termino el contador") 
+print("termino el contador") 
 
 while True:
     texto = input("Escribe algo (o escribe salir para terminar): ")

@@ -8,19 +8,19 @@ print("Acceso concedido")
 
 saldo = 0
 #depositar
-while clave != 1234:
-    pregunta = input("¿Deseas depositar slado? (si/no): ").lower()
-    if pregunta == "si":
-        cantidad = int(input("Cuantos quiere depositar"))
-        saldo += cantidad
-        print(f"tienes saldo total de {saldo}")
-    elif pregunta == "no":
-        pregunta = input("Deseas retirar dinero? (si/no): ").lower()
-        cantidad = int(input("¿Cuanto deseas retirar?: "))
-
-        cantidad <= saldo
-        saldo -= cantidad
-        print(f"saldo actual: {saldo}")
+while True:
+    producto = input("Necesitas depositar (si/no) ")
+    if producto == "si":
+        producto = int(input("ingrese numero que vas a depositar "))
+        saldo += producto
+        print(f"El saldo total acomulado es: {saldo}")
+        
+        retirar = input("Si deseas retirar ingrese (si/no) ")
+    
+        producto = int(input("ingrese la cantidad que deseas retirar "))
+        saldo -= producto
+        print(f"El saldo total acomulado es: {saldo}")
     else:
-        print("Saldo insuficiente")
+        print(f"el saldo total {saldo}")
+        break
         
