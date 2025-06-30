@@ -1,26 +1,51 @@
-print("CAJERO AUTOMATICO\n")
+print("=== CAJERO AUTOMÁTICO ===")
 
-clave = input("Escribe la contraseña ")
-while clave != "1234":   # estructura para contraseña
-    print("contraseña incorrecta \n")
-    clave = input("intenta de nuevo ")
-print("Acceso concedido")
+# Paso 1: Verificar contraseña
+clave_correcta = "1234"
+clave = input("Ingrese su contraseña: ")
 
-saldo = 0
-#depositar
+while clave != clave_correcta:
+    print("Contraseña incorrecta. Intente de nuevo.")
+    clave = input("Ingrese su contraseña: ")
+
+print("Acceso concedido.")
+
+# Paso 2: Menú de operaciones
+saldo = 0  # Saldo inicial
+
 while True:
-    producto = input("Necesitas depositar (si/no) ")
-    if producto == "si":
-        producto = int(input("ingrese numero que vas a depositar "))
-        saldo += producto
-        print(f"El saldo total acomulado es: {saldo}")
-        
-        retirar = input("Si deseas retirar ingrese (si/no) ")
-    
-        producto = int(input("ingrese la cantidad que deseas retirar "))
-        saldo -= producto
-        print(f"El saldo total acomulado es: {saldo}")
-    else:
-        print(f"el saldo total {saldo}")
+    print("\n--- MENÚ ---")
+    print("1. Ingresar saldo")
+    print("2. Retirar saldo")
+    print("3. Ver saldo")
+    print("4. Salir")
+
+    opcion = input("Elija una opción (1-4): ")
+
+    if opcion == "1":
+        ingreso = float(input("¿Cuánto desea ingresar?: "))
+        if ingreso > 0:
+            saldo += ingreso
+            print(f"Se ingresaron ${ingreso}. Nuevo saldo: ${saldo}")
+        else:
+            print("El valor debe ser mayor que cero.")
+
+    elif opcion == "2":
+        retiro = float(input("¿Cuánto desea retirar?: "))
+        if retiro > saldo:
+            print("Fondos insuficientes.")
+        elif retiro <= 0:
+            print("El valor debe ser mayor que cero.")
+        else:
+            saldo -= retiro
+            print(f"Se retiraron ${retiro}. Saldo restante: ${saldo}")
+
+    elif opcion == "3":
+        print(f"Su saldo actual es: ${saldo}")
+
+    elif opcion == "4":
+        print("Gracias por usar el cajero. ¡Hasta pronto!")
         break
-        
+
+    else:
+        print("Opción inválida. Intente nuevamente.")
