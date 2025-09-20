@@ -1,5 +1,5 @@
-public class Main {
-    public static void main(String[] args) {
+public class Cliente {
+    public static void cliente(String[] args) {
 
         // Crear un cliente
         Cliente cliente1 = new Cliente(1, "Andrés", "andres@email.com", "Calle 123", "3001234567");
@@ -18,5 +18,6 @@ public class Main {
 
         // Simular historial del cliente
         cliente1.verHistorial();
+    System.out.println("--- Simulación completada ---");
     }
 }

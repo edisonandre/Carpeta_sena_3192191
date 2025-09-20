@@ -1,6 +1,6 @@
 
-public class cliente{
-
+public class cliente {
+    
     int id_cliente;
     String nombre; // atributo
     int edad;
@@ -15,11 +15,11 @@ public class cliente{
         this.nombre = nombre;
         this.edad = edad;
         this.email = email; // constructor
-        this.direccion = direccion;
+        this.direccion = direccion; //this es una referencia al objeto actual
         this.telefono = telefono;
     }
 
-    public void registrar() { // método
+    public void registrar() { // método  //pub
         System.out.println("Nombre: " + nombre + ", Edad: " + edad, ", Email: " + email);
     }
 
